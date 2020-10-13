@@ -15,7 +15,6 @@ def int_func(word: str) -> str:
 
 print(int_func("text"))
 
-
 my_string = "hello world"
-for word in my_string.split(" "):
-    print(int_func(word))
+result = [int_func(word) for word in my_string.split(" ")]
+print(" ".join(result))
